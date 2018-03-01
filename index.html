@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sliders</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <section class="container" style="padding: .6em;">
+            <div class="text-center ">
+                <a href="#">
+                    <img src="img/logo.png" class="img-responsive img-center" style="margin: 0 auto;">
+                </a>
+            </div>
+        </section>
+        <hr style="margin-top: 0rem; margin-bottom: 0rem;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-6 col-sm-6 col-xs-3" id="burger">
+                    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapse_target">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-success " href="#">Página inicial</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-success " href="#">Quem somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-success ">
+                                        Imóveis para locação
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-success ">Imóveis à venda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-success ">Entre em contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9" id="search">
+                    <form class="card">
+                        <div class="card-body row no-gutters align-items-center text-light bg-success" style="border-radius: 5rem;">
+                            <div class="col">
+                                <input class="form-control form-control-xs form-control-borderless" type="search" placeholder="search" style="border-radius: 1.875rem;">
+                            </div>
+                            <!--end of col-->
+                            <div class="col-auto">
+                                <button class="btn btn-xs btn-success" type="submit" style="border-radius: 1.875rem;">
+                                    <i class="fa fa-search h5 text-body" style="margin-bottom:0px;"></i>&nbsp;&nbsp;
+                                </button>
+                            </div>
+                            <!--end of col-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr style="margin-top: 0rem; margin-bottom: 0rem;">
+    <div class="jumbotron jumbotron-fluid jumbotron-light bg-light" style="margin-bottom: 0rem; margin-top: 0rem;">
+        <div class="container">
+            <h1 class="display-4">Destaque à Venda</h1>
+            <p class="lead">Veja todos os móveis à venda cliclando aqui</p>
+        </div>
+    </div>
+    <hr style="margin-top: 0rem;">
+
+    <section>
+        <!-- BOTÕES LEFT / RIGHT -->
+        <aside class="btn btn-primary btn-slider-control d-none d-lg-block btn-slider-control-left" onclick="SlideNext('SliderDestaques')">
+            <span class="fa fa-arrow-left" id="arrow-left"></span>
+        </aside>
+        <aside class="btn btn-primary btn-slider-control d-none d-lg-block btn-slider-control-right" onclick="SlideBack('SliderDestaques')">
+            <span class="fa fa-arrow-right" id="arrow-right"></span>
+        </aside>
+    </section>
+    <section class="container" id="destaque">
+        <div class="row" id="SliderDestaques">
+            <article class="col-lg-4 col-md-6 col-sm-6 col-xs-12 d-block">
+                <div class="card" style="width: 18rem; padding: .3em; margin-bottom: .6em;">
+                    <img class="card-img-top" src="img/ficha1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Residencial Altos da Alvorada 1</h6>
+                        <p class="card-text">
+                            <span class="fas fa-building fa-sm"></span> Apartamento</p>
+                        <p class="card-text">
+                            <span class="fas fa-tag fa-sm"></span> Venda</p>
+                        <p class="card-text">
+                            <span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+                        <p class="card-text">
+                            <span class="fas fa-dollar-sign fa-sm"></span> R$ 280.000,00</p>
+                        <a href="#" class="btn btn-primary">Veja mais detalhes</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-sm-6 col-xs-12 d-block">
+                <div class="card" style="width: 18rem; padding: .3em; margin-bottom: .6em;">
+                    <img class="card-img-top" src="img/ficha2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Residencial Altos da Alvorada 2</h6>
+                        <p class="card-text">
+                            <span class="fas fa-building fa-sm"></span> Apartamento</p>
+                        <p class="card-text">
+                            <span class="fas fa-tag fa-sm"></span> Venda</p>
+                        <p class="card-text">
+                            <span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+                        <p class="card-text">
+                            <span class="fas fa-dollar-sign fa-sm"></span> R$ 280.000,00</p>
+                        <a href="#" class="btn btn-primary">Veja mais detalhes</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-lg-4 col-md-6 col-sm-6 col-xs-12 d-none d-lg-block">
+                <div class="card" style="width: 18rem; padding: .3em; margin-bottom: .6em;">
+                    <img class="card-img-top" src="img/ficha3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Residencial Altos da Alvorada 3</h6>
+                        <p class="card-text">
+                            <span class="fas fa-building fa-sm"></span> Apartamento</p>
+                        <p class="card-text">
+                            <span class="fas fa-tag fa-sm"></span> Venda</p>
+                        <p class="card-text">
+                            <span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+                        <p class="card-text">
+                            <span class="fas fa-dollar-sign fa-sm"></span> R$ 280.000,00</p>
+                        <a href="#" class="btn btn-primary">Veja mais detalhes</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-sm-6 col-xs-12 d-none">
+                <div class="card" style="width: 18rem; padding: .3em; margin-bottom: .6em;">
+                    <img class="card-img-top" src="img/ficha4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Residencial Altos da Alvorada 4</h6>
+                        <p class="card-text">
+                            <span class="fas fa-building fa-sm"></span> Apartamento</p>
+                        <p class="card-text">
+                            <span class="fas fa-tag fa-sm"></span> Venda</p>
+                        <p class="card-text">
+                            <span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+                        <p class="card-text">
+                            <span class="fas fa-dollar-sign fa-sm"></span> R$ 280.000,00</p>
+                        <a href="#" class="btn btn-primary">Veja mais detalhes</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-xs-12 d-none">
+                <div class="card" style="width: 18rem; padding: .3em; margin-bottom: .6em;">
+                    <img class="card-img-top" src="img/ficha5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Residencial Altos da Alvorada 5</h6>
+                        <p class="card-text">
+                            <span class="fas fa-building fa-sm"></span> Apartamento</p>
+                        <p class="card-text">
+                            <span class="fas fa-tag fa-sm"></span> Venda</p>
+                        <p class="card-text">
+                            <span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+                        <p class="card-text">
+                            <span class="fas fa-dollar-sign fa-sm"></span> R$ 280.000,00</p>
+                        <a href="#" class="btn btn-primary">Veja mais detalhes</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <div class="container">
+        <a id="carregar-mais" class="btn btn-primary d-block d-lg-none col-md-12" onclick="carregarMais('SliderDestaques')">
+            Carregar mais
+        </a>
+    </div>
+
+
+    <footer>
+        <hr style="margin-bottom: .5rem;">
+        <div class="container">
+            <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+                <a href="#">
+                    <span href="#" class="fab fa-twitter fa-lg"></span>
+                </a>
+                <a href="#">
+                    <span href="#" class="fab fa-facebook-f fa-lg"></span>
+                </a>
+            </div>
+        </div>
+        <hr style="margin-top: .5rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="width: 100%; text-align: center;">
+                    <h6 class="text-dark">Navegue</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Página inicial</a>
+                        </li>
+                        <li>
+                            <a href="#">Quem somos</a>
+                        </li>
+                        <li>
+                            <a href="#">Imóveis para locação</a>
+                        </li>
+                        <li>
+                            <a href="#">Imóveis à venda</a>
+                        </li>
+                        <li>
+                            <a href="#">Entre em contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end of col-->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 100%; text-align: center; margin-top: 10px;">
+                    <h6 class="text-dark">Horários</h6>
+                    <ul class="list-unstyled text-primary">
+                        <li>
+                            <h6>Agência Estreito</h6>
+                            <p>Seg a Sex Das 9h as 18h</p>
+
+                        </li>
+                        <li>
+                            <h6>Agência Centro</h6>
+                            <p>Seg a Sex Das 9h as 18h</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--end of col-->
+                <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12" style="width: 100%; text-align: center; margin-top: 10px;">
+                    <h6 class="text-dark">Company</h6>
+                    <ul class="list-unstyled text-primary">
+                        <li class="d-inline-block">
+                            <span class="fa fa-map-marker-alt d-inline text-success"></span>
+                            <p class="d-inline fa-mouse-pointer p-2 text-success">Veja a localização</p>
+                        </li>
+                        <li class="d-inline-block">
+                            <span class="fa fa-phone d-inline text-success"></span>
+                            <p class="d-inline fa-mouse-pointer p-2 text-success">Veja a localização</p>
+                        </li>
+                        <li class="d-inline-block">
+                            <span class="fa fa-mouse-pointer d-inline text-success"></span>
+                            <p class="d-inline fa-mouse-pointer p-2 text-success">Veja a localização</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--end of col-->
+                <div class="col-lg-2 col-md-12 col-sm-6 col-xs-12" style="width: 100%; text-align: center; margin-top: 10px;">
+                    <img alt="Image" src="img/logo.png" class="mb-4" style="margin-bottom: 0 !important;" />
+                    <p class="text-muted" style="margin-top:.2rem;">
+                        &copy; Copyright 2014
+                    </p>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="font-awesome/js/fontawesome-all.js"></script>
+
+    <script>
+        function SlideNext(_id) {
+            var slideComponent = document.getElementById(_id);
+            var componentsArray = [].slice.call(slideComponent.children);
+            componentsArray.push(componentsArray.shift());
+            slideComponent.innerHTML = "";
+            for (var i = 0; componentsArray.length > 1; i++) {
+                if (i > 2) {
+                    slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12 d-block d-sm-none\">" +
+                        componentsArray[i].innerHTML +
+                        "</article>";
+                } else {
+                    slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12\">" + componentsArray[i].innerHTML +
+                        "</article>";
+                }
+
+            }
+        }
+
+        function SlideBack(_id) {
+            var slideComponent = document.getElementById(_id);
+            var componentsArray = [].slice.call(slideComponent.children);
+            componentsArray.unshift(componentsArray.pop());
+            slideComponent.innerHTML = "";
+            for (var i = 0; componentsArray.length > 1; i++) {
+                if (i > 2) {
+                    slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12 d-block d-sm-none\">" +
+                        componentsArray[i].innerHTML +
+                        "</article>";
+                } else {
+                    slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12\">" + componentsArray[i].innerHTML +
+                        "</article>";
+                }
+            }
+        }
+
+        function carregarMais(_id) {
+            var slideComponent = document.getElementById(_id);
+            var componentsArray = [].slice.call(slideComponent.children);
+            slideComponent.innerHTML = "";
+            for (var i = 0; componentsArray.length > 1; i++) {
+                slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12\">" +
+                    componentsArray[i].innerHTML +
+                    "</article>";
+            }
+            document.getElementById("carregar-mais").className = "d-none";
+        }
+
+    </script>
+</body>
+
+</html>
