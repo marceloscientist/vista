@@ -275,56 +275,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="font-awesome/js/fontawesome-all.js"></script>
+    
+    <script src="js/loadingPics.js"></script>
+    <script src="js/slidingPics.js"></script>
 
-    <script>
-        function SlideNext(_id) {
-            var slideComponent = document.getElementById(_id);
-            var componentsArray = [].slice.call(slideComponent.children);
-            componentsArray.push(componentsArray.shift());
-            slideComponent.innerHTML = "";
-            for (var i = 0; componentsArray.length > 1; i++) {
-                if (i > 2) {
-                    slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12 d-block d-sm-none\">" +
-                        componentsArray[i].innerHTML +
-                        "</article>";
-                } else {
-                    slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12\">" + componentsArray[i].innerHTML +
-                        "</article>";
-                }
-
-            }
-        }
-
-        function SlideBack(_id) {
-            var slideComponent = document.getElementById(_id);
-            var componentsArray = [].slice.call(slideComponent.children);
-            componentsArray.unshift(componentsArray.pop());
-            slideComponent.innerHTML = "";
-            for (var i = 0; componentsArray.length > 1; i++) {
-                if (i > 2) {
-                    slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12 d-block d-sm-none\">" +
-                        componentsArray[i].innerHTML +
-                        "</article>";
-                } else {
-                    slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12\">" + componentsArray[i].innerHTML +
-                        "</article>";
-                }
-            }
-        }
-
-        function carregarMais(_id) {
-            var slideComponent = document.getElementById(_id);
-            var componentsArray = [].slice.call(slideComponent.children);
-            slideComponent.innerHTML = "";
-            for (var i = 0; componentsArray.length > 1; i++) {
-                slideComponent.innerHTML += "<article class=\"col-lg-4 col-md-6 col-xs-12\">" +
-                    componentsArray[i].innerHTML +
-                    "</article>";
-            }
-            document.getElementById("carregar-mais").className = "d-none";
-        }
-
-    </script>
 </body>
 
 </html>
