@@ -1,0 +1,82 @@
+@mixin arrows {
+    position: relative
+}
+
+$btn-slider-margin-control: 50px;
+$btn-slider-side-control: -12px; 
+
+
+
+.card {
+    border: 0px;
+    padding: .25rem .75rem;
+} .card-body {
+    padding: 0.25rem; }
+  .card-text {
+    margin-bottom: 2px; }
+
+/* brand {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0px;
+    left: 0px;
+}
+ */
+aside {
+    margin-top: 10em;
+    margin-bottom: -10em;
+    margin-left: -50px;
+    left: -12px;
+}  /* Center Vertical Alignment */
+  .arrow {
+    @include arrows; }
+
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+
+.btn-slider-control-left {
+    margin-left: $btn-slider-margin-control;
+    left: $btn-slider-side-control;
+    float: left;
+}
+
+.btn-slider-control-right {
+    margin-right: $btn-slider-margin-control;
+    right: $btn-slider-side-control;
+    float: right;
+}
+
+
+
+
+article {
+    float: center;
+}
+
+/* trying to hold the right controlling from hiding behind the slide */
+@media(max-width: 1120px) {
+    .btn-slider-control-right {
+        margin-right: 10px;
+        right: -12px;
+        float: right;
+    }
+    #SliderDestaques {
+        width: 87%;
+        position: none;
+    }
+}
+
+/* Controlling burger and search sizes in order to avoid the search box to be pushed to the next line */
+@media(max-width: 720px) {
+    #search {
+        width: 12em;
+        height: 0em;
+        right: -2em;
+    }
+    #burger {
+        width: 3em;
+    }
+}

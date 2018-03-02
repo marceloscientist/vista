@@ -1,83 +1,64 @@
 .card {
-    border: 0px;
-    padding: .25rem .75rem;
-}
+  border: 0px;
+  padding: .25rem .75rem; }
 
 .card-body {
-    padding: 0.25rem;
-}
+  padding: 0.25rem; }
 
 .card-text {
-    margin-bottom: 2px;
-}
+  margin-bottom: 2px; }
 
-brand {
+/* brand {
     margin-top: 0em;
     margin-bottom: 0em;
     margin-left: 0px;
     left: 0px;
 }
-
+ */
 aside {
-    margin-top: 10em;
-    margin-bottom: -10em;
-    margin-left: -50px;
-    left: -12px;
-}
+  margin-top: 10em;
+  margin-bottom: -10em;
+  margin-left: -50px;
+  left: -12px; }
+
+/* Center Vertical Alignment */
+.arrow {
+  position: relative; }
 
 .img-responsive {
-    margin: 0 auto;
-}
-
-#arrow-left {
-    position: relative;
-}
+  margin: 0 auto; }
 
 .btn-slider-control-left {
-    margin-left: 50px;
-    left: -12px;
-    float: left;
-}
-
-#arrow-right {
-    position: relative;
-}
+  margin-left: 50px;
+  left: -12px;
+  float: left; }
 
 .btn-slider-control-right {
-    margin-right: 50px;
-    right: -12px;
-    float: right;
-}
-
-/* #carregar-mais {
-}
- */
+  margin-right: 50px;
+  right: -12px;
+  float: right; }
 
 article {
-    float: center;
-}
+  float: center; }
 
-@media(max-width: 1120px) {
-    .btn-slider-control-right {
-        margin-right: 10px;
-        right: -12px;
-        float: right;
-    }
-    #SliderDestaques {
-        width: 87%;
-    }
-    #SliderDestaques {
-        position: none;
-    }
-}
+/* trying to hold the right controlling from hiding behind the slide */
+@media (max-width: 1120px) {
+  .btn-slider-control-right {
+    margin-right: 10px;
+    right: -12px;
+    float: right; }
 
-@media(max-width: 720px) {
-    #search {
-        width: 12em;
-        height: 0em;
-        right: -2em;
-    }
-    #burger {
-        width: 3em;
-    }
-}
+  #SliderDestaques {
+    width: 87%;
+    position: none; } }
+/* Controlling burger and search sizes in order to avoid the search box to be pushed to the next line */
+@media (max-width: 720px) {
+  #search {
+    width: 12em;
+    height: 0em;
+    right: -2em; }
+
+  #burger {
+    width: 3em; } }
+
+/*# sourceMappingURL=estilos.css.map */
