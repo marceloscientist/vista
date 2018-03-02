@@ -1,3 +1,4 @@
+ 
 @mixin arrows {
     position: relative
 }
@@ -7,6 +8,15 @@ $btn-slider-side-control: -12px;
 
 
 
+/**** 
+
+    Cards for the pictures in the Slider 
+    Each Article contains One picture alone
+    
+
+*****/
+article {
+    float: center; }
 .card {
     border: 0px;
     padding: .25rem .75rem;
@@ -15,13 +25,13 @@ $btn-slider-side-control: -12px;
   .card-text {
     margin-bottom: 2px; }
 
-/* brand {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 0px;
-    left: 0px;
-}
- */
+    
+
+ /**** 
+
+        All about the slider controllers
+  
+ ****/
 aside {
     margin-top: 10em;
     margin-bottom: -10em;
@@ -32,31 +42,21 @@ aside {
     @include arrows; }
 
 
-.img-responsive {
-    margin: 0 auto;
-}
-
-
 .btn-slider-control-left {
     margin-left: $btn-slider-margin-control;
     left: $btn-slider-side-control;
-    float: left;
-}
+    float: left; }
 
 .btn-slider-control-right {
     margin-right: $btn-slider-margin-control;
     right: $btn-slider-side-control;
-    float: right;
-}
+    float: right; }
 
 
 
 
-article {
-    float: center;
-}
 
-/* trying to hold the right controlling from hiding behind the slide */
+/* trying to hold the right controller from hiding behind the slide */
 @media(max-width: 1120px) {
     .btn-slider-control-right {
         margin-right: 10px;
@@ -69,7 +69,14 @@ article {
     }
 }
 
-/* Controlling burger and search sizes in order to avoid the search box to be pushed to the next line */
+
+
+/***** 
+
+    Controlling burger and search sizes in order to avoid the search box to be pushed to the next line 
+    
+******/
+
 @media(max-width: 720px) {
     #search {
         width: 12em;
@@ -80,3 +87,24 @@ article {
         width: 3em;
     }
 }
+/* 
+@media (min-width: 576px) { 
+    #destaque { max-width: 300px}
+}
+ *//**** 
+
+    Responsive Images
+
+****/
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+/* brand {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0px;
+    left: 0px;
+}
+ */
